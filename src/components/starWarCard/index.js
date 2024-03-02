@@ -60,6 +60,7 @@ const StarWarCard = ({ planet, handleResident, handlePlanetInfo }) => {
                       placement="topLeft"
                       content={residents.map((resident, index) => (
                         <li key={index}>
+                          {/* eslint-disable */}
                           <a onClick={() => handleResident(resident)}>
                             Resident {resident.split("/")[5]}
                           </a>

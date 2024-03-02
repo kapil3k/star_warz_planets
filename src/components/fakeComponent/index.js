@@ -128,6 +128,7 @@ const FakeComponent = () => {
               </Paragraph>
               <Row className="mt-1" justify="end">
                 <Tag color="#108ee9">
+                 { /* eslint-disable */}
                   <a>More...</a>
                 </Tag>
               </Row>
