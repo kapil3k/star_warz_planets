@@ -1,38 +1,44 @@
-.App {
+body {
+  margin: 0;
+}
+
+.back_cover {
+  background: url("/public/images/planet_image.webp") no-repeat center center /
+    cover;
+  position: fixed;
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;
+}
+
+p {
+  margin: 0;
+}
+
+.logo {
+  font-family: "Poller One", serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
+  font-size: 3rem;
+  color: beige;
+  padding: 1.2rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.px-1 {
+  padding: 0.5rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pagination {
+  background: #e0e0e085;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 2rem;
   }
 }
